@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+    <!-- settings labels -->
+    <string id="30001">Language</string>
+	<string id="30002">CSFD posters size</string>
+    <string id="30003">CSFD posters</string>
+    <string id="30004">TMDB posters</string>
+    <string id="30005">TMDB prefered language</string>
+    <string id="30006">IMDB posters</string>
+    <string id="30007">IMDB poster size</string>
+</strings>
+
