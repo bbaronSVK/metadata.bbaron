@@ -2,12 +2,5 @@
 <settings>
     <setting label="30001" type="labelenum" values="orig|sk|cz" id="lang" default="orig"/>
     <setting type="sep"/>
-    <setting label="30003" type="bool" id="csfd" default="true"/>
-    <setting label="30002" type="labelenum" values="180|360|480|720|1080" id="thumbsize" enable="eq(-1,true)" default="480"/>
-    <setting type="sep"/>
-    <setting label="30004" type="bool" id="tmdbposter" default="false"/>
-    <setting label="30005" type="select" values="bg|cs|da|de|el|en|es|fi|fr|he|hr|hu|it|ja|ko|nl|no|pl|pt|ru|sl|sv|tr|zh" id="tmdbthumblanguage" default="cs" enable="eq(-1,true)"/>
-    <setting type="sep"/>
-    <setting label="30006" type="bool" id="imdbposter" default="false"/>
-    <setting label="30007" type="labelenum" values="192|256|384|512|1024" id="imdbscale" default="512" enable="eq(-1,true)"/>
+    <setting label="Stahovat sety filmov (pomale)" type="bool" id="sets" default="false"/>
 </settings>

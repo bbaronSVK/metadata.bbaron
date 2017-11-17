@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?><scraper framework="1.1" date="2014-1-9" name="BBaron" content="movies" language="sk" cachePersistence="02:00">
 	<NfoUrl dest="3">
-		<RegExp input="$$1" output="&lt;url&gt;http://csfd.bbaron.sk/xbmc.php?tc=$INFO[csfd];tp=$INFO[tmdbposter];ip=$INFO[imdbposter];size=$INFO[thumbsize];lang=$INFO[lang];imdb=\2&lt;/url&gt;&lt;id&gt;tt\2&lt;/id&gt;" dest="3">
+		<RegExp input="$$1" output="&lt;url&gt;http://csfd.bbaron.sk/xbmc.php?tc=$INFO[csfd];set=$INFO[sets];lang=$INFO[lang];imdb=\2&lt;/url&gt;&lt;id&gt;tt\2&lt;/id&gt;" dest="3">
 			<expression noclean="1">(imdb.com)/Title\?([0-9]*)</expression>
 		</RegExp>
-		<RegExp input="$$1" output="&lt;url&gt;http://csfd.bbaron.sk/xbmc.php?tc=$INFO[csfd];tp=$INFO[tmdbposter];ip=$INFO[imdbposter];size=$INFO[thumbsize];lang=$INFO[lang];imdb=\2&lt;/url&gt;&lt;id&gt;tt\2&lt;/id&gt;" dest="3+">
+		<RegExp input="$$1" output="&lt;url&gt;http://csfd.bbaron.sk/xbmc.php?tc=$INFO[csfd];set=$INFO[sets];lang=$INFO[lang];imdb=\2&lt;/url&gt;&lt;id&gt;tt\2&lt;/id&gt;" dest="3+">
 			<expression noclean="1">(imdb.com/title/tt)([0-9]*)</expression>
 		</RegExp>
-		<RegExp input="$$1" output="&lt;url&gt;http://csfd.bbaron.sk/xbmc.php?tc=$INFO[csfd];tp=$INFO[tmdbposter];ip=$INFO[imdbposter];size=$INFO[thumbsize];lang=$INFO[lang];;csfd=\1&lt;/url&gt;&lt;id&gt;tt\2&lt;/id&gt;" dest="3">
+		<RegExp input="$$1" output="&lt;url&gt;http://csfd.bbaron.sk/xbmc.php?tc=$INFO[csfd];set=$INFO[sets];lang=$INFO[lang];;csfd=\1&lt;/url&gt;&lt;id&gt;tt\2&lt;/id&gt;" dest="3">
 			<expression noclean="1">csfd.cz/film/([0-9]+)</expression>
 		</RegExp>
 	</NfoUrl>
 	
 	<CreateSearchUrl SearchStringEncoding="utf-8" dest="3">
-		<RegExp input="$$1;year=$$2;o[1]=$$1;;o[]=$$2;o[]=$$3;o[]=$$4;o[]=$$5;o[]=$$6;o[]=$$7;o[]=$$8;o[]=$$9" output="&lt;url&gt;http://csfd.bbaron.sk/xbmc.php?tc=$INFO[csfd];tp=$INFO[tmdbposter];ip=$INFO[imdbposter];size=$INFO[thumbsize];lang=$INFO[lang];name=\1&lt;/url&gt;" dest="3">
+		<RegExp input="$$1;year=$$2;o[1]=$$1;;o[]=$$2;o[]=$$3;o[]=$$4;o[]=$$5;o[]=$$6;o[]=$$7;o[]=$$8;o[]=$$9" output="&lt;url&gt;http://csfd.bbaron.sk/xbmc.php?tc=$INFO[csfd];set=$INFO[sets];lang=$INFO[lang];name=\1&lt;/url&gt;" dest="3">
 			<expression clear="yes">(.+)</expression>
 		</RegExp>
 	</CreateSearchUrl>
